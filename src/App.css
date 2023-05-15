@@ -1,0 +1,148 @@
+@import url("https://fonts.googleapis.com/css2?family=IBM+Plex+Serif:wght@400&family=Poppins:wght@400;600&display=swap");
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "poppines", sans-serif;
+}
+
+body {
+  background-color: rgba(229, 204, 157, 0.635);
+}
+
+h1 {
+  font-size: 3.2rem;
+  text-align: center;
+  margin: 2.4rem 0;
+}
+
+h2 {
+  font-family: "IBM Plex serif", serif;
+  font-size: 2,4rem;
+}
+
+p {
+  margin: 2rem 0;
+  color: rgb(21, 19, 61, 0.5);
+  font-size: 1.6rem;
+  font-weight: 400;
+  display: inline-block;
+}
+
+span {
+  text-transform: capitalize;
+  font-weight: bold;
+}
+
+/* .search-bar {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-top: 15px;
+} */
+
+.search-bar input {
+  min-height: 3.5rem;
+  min-width: 40rem;
+  font-size: 2rem;
+  text-transform: capitalize;
+  border: none;
+  border-bottom: 0.2rem solid rgb(139, 134, 134);
+  outline: none;
+}
+
+.pagination {
+  margin-top: 2rem;
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.pagination p {
+ padding: 1rem;
+  font-size: 1.5rem;
+}
+
+
+.button-prev {
+  font-size: 1.3rem;
+  color: #fff;
+  background-color: rgb(37, 2, 133);
+  width: 6rem;
+  height: 2rem;
+  cursor: pointer;
+  border-radius: 5px;
+  -webkit-border-radius: 5px;
+  -moz-border-radius: 5px;
+  -ms-border-radius: 5px;
+  -o-border-radius: 5px;
+}
+
+.cards {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  gap: 4rem;
+}
+
+.card {
+ 
+  border-radius: 0.5rem;
+  -webkit-border-radius: 0.5rem;
+  -moz-border-radius: 0.5rem;
+  -ms-border-radius: 0.5rem;
+  -o-border-radius: 0.5rem; 
+  box-shadow:  rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
+  min-width: 20rem;
+  width: 40vw;
+  padding: 4rem;
+  background-color: white;
+  color: #15133c;
+
+}
+
+.card-button {
+  flex-direction: row;
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+}
+
+.card-button a {
+  color: blue;
+font-weight: 400;
+font-size: 1.6rem;
+
+}
+
+.card-button a:last-child {
+  color: red;
+}
+
+
+
+@media (max-width: 998px){
+  html {
+    font-size: 56%;
+  }
+
+  .card {
+    min-width: 45rem;
+    padding: 2.5rem;
+  }
+
+
+}
+
+@media (max-width: 786px) {
+  html {
+    font-size: 51%;
+  }
+  .card {
+    min-width: 35rem;
+    padding: 2rem;
+  }
+}
